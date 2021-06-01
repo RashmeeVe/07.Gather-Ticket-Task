@@ -1,0 +1,75 @@
+.MuiDialog-paperWidthLg {
+  overflow: hidden !important;
+}
+
+.MuiFormLabel-root {
+  line-height: 0.2 !important;
+}
+
+.slide-enter {
+  transform: translateY(100%);
+}
+.slide-enter.slide-enter-active {
+  transform: translateY(0px);
+  transition: transform 300ms;
+}
+
+.slide-exit {
+  transform: translateY(0px);
+  transition: transform 300ms;
+}
+.slide-exit.slide-exit-active {
+  transform: translateY(-100%);
+  transition: transform 300ms;
+}
+.slide-exit-done {
+  transform: translateY(-100%);
+}
+
+@media only screen and (max-width: 864px) {
+  .slide-enter {
+    transform: translateY(130%);
+  }
+  .slide-exit.slide-exit-active {
+    transform: translateY(-130%);
+  }
+  .slide-exit-done {
+    transform: translateY(-130%);
+  }
+}
+
+/* Slide Back */
+.slide-back-enter {
+  transform: translateY(-100%);
+}
+.slide-back-enter.slide-back-enter-active {
+  transform: translateY(0px);
+  transition: transform 300ms;
+}
+.slide-back-enter-done {
+  transform: translateY(0px);
+}
+
+.slide-back-exit {
+  transform: translateY(0px);
+  transition: transform 300ms;
+}
+.slide-back-exit.slide-back-exit-active {
+  transform: translateY(700px);
+  transition: transform 300ms;
+}
+.slide-back-exit-done {
+  transform: translateY(700px);
+}
+
+@media only screen and (max-width: 864px) {
+  .slide-back-enter {
+    transform: translateY(-100%);
+  }
+  .slide-back-exit.slide-back-exit-active {
+    transform: translateY(100%);
+  }
+  .slide-back-exit-done {
+    transform: translateY(200%);
+  }
+}
